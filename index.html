@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Arzu Guliyev Homework</title>
+</head>
+<body>
+    <main>
+        <section id="wrapper" class="d-flex flex-column align-items-center justify-content-center">
+            <div class="alert alert-danger mt-5 d-none" role="alert" id="alertForm">
+               
+            </div>
+            <div class="form-container w-50">
+                <form action="#" name="objectForm" onsubmit="return checkInput()">
+                   <div id="nameInput" class="mt-3">
+                    <input type="text" name="userName" class="form-control" placeholder="Enter username">
+                   </div>
+
+                   <div id="userSurnameInput" class="mt-3">
+                    <input type="text" name="userSurname" class="form-control" placeholder="Enter username">
+                   </div>
+
+                   <div id="dateInput"  class="mt-3">
+                    <input type="text" name="userBirthday" class="form-control" placeholder="Enter birthday">
+                    <small class="text-secondary">Birthday format should be like that 18-03-2018</small>
+                   </div>
+
+                   <div id="emailInput"  class="mt-3">
+                    <input type="text" name="userEmail" class="form-control" placeholder="Enter useremail">
+                   </div>
+
+                   <div id="submitButton" class="mt-3">
+                       <button type="submit" class="btn btn-primary">Submit</button>
+                   </div>
+                </form>
+
+                <div id="deleteFromList" class="mt-3">
+                    <input type="text" placeholder="Enter ID" class="form-control" id="deleteId">
+                    <button type="button" onclick="deleteId()" class="btn btn-warning">DELETE</button>
+                </div>
+
+                <div id="listContainer" class="mt-3">
+                    <div id="sortButtonGroup">
+                        <button type="button" onclick="sortForId()" class="btn btn-outline-primary">ID</button>
+                        <button type="button" onclick="sortForName()" class="btn btn-outline-primary">Name</button>
+                        <button type="button" onclick="sortForSurname()" class="btn btn-outline-primary">Surname</button>
+                    </div>
+
+                    <div id="personListContainer">
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="js/script.js"></script>    
+</body>
+</html>
